@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
   </head>
   <body>
     <header>
@@ -24,7 +24,7 @@
       <aside></aside>
       <main>
         <h2>Contact me:</h2>
-        <form action="success.html">
+        <form id="form">
           Name: <br /><input type="text" /> <br />Email: <br /><input
             type="Email"
             name=""
@@ -33,7 +33,9 @@
           <br />
           Message: <br />
           <textarea name="freeform" id="freeform" cols="50" rows="6"></textarea>
-          <br /><button class="submitBtn">Submit</button>
+          <br /><button id="submit" type="submit" class="submitBtn">
+            Submit
+          </button>
         </form>
       </main>
       <aside></aside>
